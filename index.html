@@ -52,11 +52,26 @@
         pointer-events: all !important;
       }
       .battery1 {
-        left: 220px !important;
-        height: 352px;
+        left: 132px !important;
+        height: 100px;
+        width: 100px;
+        display: inline-block;
+        background-image: url(./battery1.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: transparent;
       }
       .battery2 {
+        right: 220px !important;
+        height: 100px;
         width: 100px;
+        display: inline-block;
+        background-image: url(./battery2.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: transparent;
       }
     </style>
   </head>
@@ -67,12 +82,8 @@
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <div id="scene" data-relative-input="true" class="d-flex flex-column gap-3">
-            <a class="battery1 shadow-lg" href="https://anaram.shop/category/battery/aa-size/" target="_blank" data-depth="0.2">
-              <img src="./battery2.png" />
-            </a>
-            <a class="battery2 shadow-lg" href="https://anaram.shop/category/battery/d-size/" target="_blank" data-depth="0.6">
-              <img src="./battery1.png" />
-            </a>
+            <a class="battery1 shadow-lg" href="https://anaram.shop/category/battery/aa-size/" target="_blank" data-depth="0.2"> </a>
+            <a class="battery2 shadow-lg" href="https://anaram.shop/category/battery/d-size/" target="_blank" data-depth="0.6"> </a>
           </div>
         </div>
         <div class="swiper-slide">
