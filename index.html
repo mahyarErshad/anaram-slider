@@ -141,25 +141,25 @@
         <div class="swiper-slide">
           <div class="wrapper" class="d-flex flex-column gap-3 position-relative">
             <div id="scene" data-relative-input="true" data-hover-only="hoverOnly" class="floating light2">
-              <img src="./images/light2.svg" data-depth="1" alt="light" />
+              <img src="./images/light2.svg" data-depth="1.5" alt="light" />
             </div>
             <div id="scene2" data-relative-input="true" data-hover-only="hoverOnly" class="floating power">
-              <img src="./images/powerBank.svg" alt="power" data-depth="1" />
+              <img src="./images/powerBank.svg" alt="power" data-depth="1.5" />
             </div>
             <div id="scene3" data-relative-input="true" data-hover-only="hoverOnly" class="floating light">
-              <img src="./images/light.svg" alt="light" data-depth="1" />
+              <img src="./images/light.svg" alt="light" data-depth="1.5" />
             </div>
             <div id="scene4" data-relative-input="true" data-hover-only="hoverOnly" class="floating charger">
-              <img src="./images/charger.svg" alt="charger" data-depth="1" />
+              <img src="./images/charger.svg" alt="charger" data-depth="2" />
             </div>
             <div id="scene5" data-relative-input="true" data-hover-only="hoverOnly" class="floating v9">
               <img src="./images/9v.svg" alt="9v" data-depth="1.5" />
             </div>
             <div id="scene6" data-relative-input="true" data-hover-only="hoverOnly" class="floating coin">
-              <img src="./images/coin.svg" alt="coin" data-depth="2" />
+              <img src="./images/coin.svg" alt="coin" data-depth="2.5" />
             </div>
             <div id="scene7" data-relative-input="true" data-hover-only="hoverOnly" class="floating aa">
-              <img src="./images/aa.svg" alt="aa battery" data-depth="2" />
+              <img src="./images/aa.svg" alt="aa battery" data-depth="2.5" />
             </div>
           </div>
         </div>
@@ -228,7 +228,7 @@
           href: "https://anaram.shop/category/battery/aa-size/",
         },
       ];
-      scene.map((item, index) => {
+      scene.map((item) => {
         const parallaxInstance = new Parallax(item.element);
         item.element.addEventListener("click", () => {
           window.open(item.href, "_blank");
