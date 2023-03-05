@@ -118,13 +118,13 @@
         height: 173px;
       }
       .aa {
-        left: 48% !important;
-        top: 45% !important;
+        left: 46% !important;
+        top: 37% !important;
         height: 100px;
         width: 100px;
       }
       .aa img {
-        transform: scale(2);
+        height: 200px;
       }
       @media screen and (max-width: 1200px) {
         .swiper {
@@ -158,9 +158,9 @@
             <div id="scene6" data-relative-input="true" data-hover-only="hoverOnly" class="floating coin">
               <img src="./images/coin.svg" alt="coin" data-depth="2" />
             </div>
-            <a href="https://anaram.shop/category/battery/aa-size/" target="_blank" class="floating aa" data-depth="0.7">
-              <img src="./images/aa.svg" alt="aa" />
-            </a>
+            <div id="scene7" data-relative-input="true" data-hover-only="hoverOnly" class="floating aa">
+              <img src="./images/aa.svg" alt="aa battery" data-depth="2" />
+            </div>
           </div>
         </div>
         <div class="swiper-slide">
@@ -222,6 +222,10 @@
         {
           element: document.getElementById("scene6"),
           href: "https://anaram.shop/category/battery/coin-size/",
+        },
+        {
+          element: document.getElementById("scene7"),
+          href: "https://anaram.shop/category/battery/aa-size/",
         },
       ];
       scene.map((item, index) => {
