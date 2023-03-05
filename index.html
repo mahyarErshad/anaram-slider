@@ -69,7 +69,7 @@
         width: 100%;
         height: 100%;
       }
-      .wrapper img{
+      .wrapper img {
         cursor: pointer;
       }
       .light2 {
@@ -142,9 +142,9 @@
             <div id="scene" data-relative-input="true" data-hover-only="hoverOnly" class="floating light2">
               <img src="./images/light2.svg" data-depth="1" alt="light" />
             </div>
-            <a href="https://anaram.shop/category/power-bank/" target="_blank" class="floating power" data-depth="0.5">
-              <img src="./images/powerBank.svg" alt="power" />
-            </a>
+            <div id="scene2" data-relative-input="true" data-hover-only="hoverOnly" class="floating power">
+              <img src="./images/powerBank.svg" alt="power" data-depth="1" />
+            </div>
             <a href="https://anaram.shop/category/flashlight/" target="_blank" class="floating light" data-depth="0.6">
               <img src="./images/light.svg" alt="light" />
             </a>
@@ -163,10 +163,10 @@
           </div>
         </div>
         <div class="swiper-slide">
-          <div id="scene2" data-relative-input="true" class="d-flex flex-column gap-3">
+          <!-- <div id="scene2" data-relative-input="true" class="d-flex flex-column gap-3">
             <div data-depth="0.2">My third Layer!</div>
             <a href="https://anaram.shop/" target="_blank" data-depth="0.6">My fourth Layer!</a>
-          </div>
+          </div> -->
         </div>
       </div>
       <div class="swiper-button-next"></div>
@@ -197,13 +197,24 @@
     </script>
     <script src="./parallex.js"></script>
     <script>
-      const scene = document.getElementById("scene");
-      const parallaxInstance = new Parallax(scene);
-      scene.addEventListener("click", () => {
-        window.open("https://anaram.shop/category/flashlight/", "_blank");
+      const scene = [
+        {
+          element: document.getElementById("scene"),
+          href: "https://anaram.shop/category/flashlight/",
+        },
+        {
+          element: document.getElementById("scene2"),
+          href: "https://anaram.shop/category/power-bank/",
+        },
+      ];
+      scene.map((item, index) => {
+        const parallaxInstance = new Parallax(item.element);
+        item.element.addEventListener("click", () => {
+          window.open(item.href, "_blank");
+        });
       });
-      const scene2 = document.getElementById("scene2");
-      const parallaxInstance2 = new Parallax(scene2);
+      // const scene2 = document.getElementById("scene2");
+      // const parallaxInstance2 = new Parallax(scene2);
     </script>
   </body>
 </html>
