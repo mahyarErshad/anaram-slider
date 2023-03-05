@@ -109,12 +109,13 @@
         transform: translateY(-21%);
       }
       .coin {
-        left: 40% !important;
+        left: 36% !important;
         top: 35% !important;
         height: 80px;
+        height: 100px;
       }
       .coin img {
-        transform: scale(4);
+        height: 173px;
       }
       .aa {
         left: 48% !important;
@@ -152,11 +153,11 @@
               <img src="./images/charger.svg" alt="charger" data-depth="1" />
             </div>
             <div id="scene5" data-relative-input="true" data-hover-only="hoverOnly" class="floating v9">
-              <img src="./images/9v.svg" alt="9v" data-depth="1" />
+              <img src="./images/9v.svg" alt="9v" data-depth="1.5" />
             </div>
-            <a href="https://anaram.shop/category/battery/coin-size/" target="_blank" class="floating coin" data-depth="0.3">
-              <img src="./images/coin.svg" alt="coin" />
-            </a>
+            <div id="scene6" data-relative-input="true" data-hover-only="hoverOnly" class="floating coin">
+              <img src="./images/coin.svg" alt="coin" data-depth="2" />
+            </div>
             <a href="https://anaram.shop/category/battery/aa-size/" target="_blank" class="floating aa" data-depth="0.7">
               <img src="./images/aa.svg" alt="aa" />
             </a>
@@ -217,6 +218,10 @@
         {
           element: document.getElementById("scene5"),
           href: "https://anaram.shop/category/battery/9volt/",
+        },
+        {
+          element: document.getElementById("scene6"),
+          href: "https://anaram.shop/category/battery/coin-size/",
         },
       ];
       scene.map((item, index) => {
