@@ -69,6 +69,9 @@
         width: 100%;
         height: 100%;
       }
+      .scene img{
+        cursor: pointer;
+      }
       .light2 {
         left: 7% !important;
         top: 10% !important;
@@ -135,10 +138,10 @@
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <div class="scene" id="scene" data-relative-input="true" class="d-flex flex-column gap-3 position-relative">
-            <a href="https://anaram.shop/category/flashlight/" target="_blank" class="floating light2" data-depth="0.2">
-              <img src="./images/light2.svg" alt="light" />
-            </a>
+          <div class="scene" class="d-flex flex-column gap-3 position-relative">
+            <div id="scene" data-relative-input="true" data-hover-only="hoverOnly" class="floating light2">
+              <img src="./images/light2.svg" data-depth="1" alt="light" />
+            </div>
             <a href="https://anaram.shop/category/power-bank/" target="_blank" class="floating power" data-depth="0.5">
               <img src="./images/powerBank.svg" alt="power" />
             </a>
@@ -196,6 +199,9 @@
     <script>
       const scene = document.getElementById("scene");
       const parallaxInstance = new Parallax(scene);
+      scene.addEventListener("click", () => {
+        window.open("https://anaram.shop/category/flashlight/", "_blank");
+      });
       const scene2 = document.getElementById("scene2");
       const parallaxInstance2 = new Parallax(scene2);
     </script>
