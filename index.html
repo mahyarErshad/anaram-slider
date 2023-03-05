@@ -63,22 +63,23 @@
         position: absolute !important;
         display: inline-block;
         width: fit-content;
-        border-radius: 50%;
       }
       .scene {
         width: 100%;
         height: 100%;
       }
       .light2 {
-        left: 3% !important;
-        top: 8% !important;
+        left: 7% !important;
+        top: 10% !important;
         height: 275px;
+        width: 112px;
       }
       .power {
         left: 13% !important;
         top: 20% !important;
         height: 225px;
         z-index: 2;
+        background: red !important;
       }
       .light {
         left: 18% !important;
@@ -94,7 +95,6 @@
         left: 34% !important;
         top: 45% !important;
         height: 250px;
-        z-index: 2;
       }
       .coin {
         left: 33% !important;
@@ -115,27 +115,27 @@
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <div class="scene" id="scene" data-relative-input="true" class="d-flex flex-column gap-3 position-relative">
-            <a class="floating light2" href="https://anaram.shop/category/flashlight/" target="_blank" data-depth="0.2">
+            <a href="https://anaram.shop/category/flashlight/" target="_blank" class="floating light2" data-depth="0.2">
               <img src="./images/light2.svg" alt="light" />
             </a>
-            <a class="floating power" href="https://anaram.shop/category/power-bank/" target="_blank" data-depth="0.5">
+            <div class="floating power" data-depth="0.5">
               <img src="./images/powerBank.svg" alt="power" />
-            </a>
-            <a class="floating light" href="https://anaram.shop/category/flashlight/" target="_blank" data-depth="0.6">
+            </div>
+            <div class="floating light" data-depth="0.6">
               <img src="./images/light.svg" alt="light" />
-            </a>
-            <a class="floating charger" href="https://anaram.shop/category/battery-charger/" target="_blank" data-depth="0.2">
+            </div>
+            <div class="floating charger" data-depth="0.2">
               <img src="./images/charger.svg" alt="charger" />
-            </a>
-            <a class="floating v9" href="https://anaram.shop/category/battery/9volt/" target="_blank" data-depth="0.4">
+            </div>
+            <div class="floating v9" data-depth="0.4">
               <img src="./images/9v.svg" alt="9v" />
-            </a>
-            <a class="floating coin" href="https://anaram.shop/category/battery/coin-size/" target="_blank" data-depth="0.3">
+            </div>
+            <div class="floating coin" data-depth="0.3">
               <img src="./images/coin.svg" alt="coin" />
-            </a>
-            <a class="floating aa" href="https://anaram.shop/category/battery/aa-size/" target="_blank" data-depth="0.7">
+            </div>
+            <div class="floating aa" data-depth="0.7">
               <img src="./images/aa.svg" alt="aa" />
-            </a>
+            </div>
           </div>
         </div>
         <div class="swiper-slide">
