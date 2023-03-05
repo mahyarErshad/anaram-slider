@@ -148,9 +148,9 @@
             <div id="scene3" data-relative-input="true" data-hover-only="hoverOnly" class="floating light">
               <img src="./images/light.svg" alt="light" data-depth="1" />
             </div>
-            <a href="https://anaram.shop/category/battery-charger/" target="_blank" class="floating charger" data-depth="0.2">
-              <img src="./images/charger.svg" alt="charger" />
-            </a>
+            <div id="scene4" data-relative-input="true" data-hover-only="hoverOnly" class="floating charger">
+              <img src="./images/charger.svg" alt="charger" data-depth="1" />
+            </div>
             <a href="https://anaram.shop/category/battery/9volt/" target="_blank" class="floating v9" data-depth="0.4">
               <img src="./images/9v.svg" alt="9v" />
             </a>
@@ -209,6 +209,10 @@
         {
           element: document.getElementById("scene3"),
           href: "https://anaram.shop/category/flashlight/",
+        },
+        {
+          element: document.getElementById("scene4"),
+          href: "https://anaram.shop/category/battery-charger/",
         },
       ];
       scene.map((item, index) => {
