@@ -53,6 +53,7 @@
       }
       .second-slide {
         background-image: url(./images/background-image2.jpg);
+        overflow: hidden;
       }
 
       .swiper-slide img {
@@ -133,20 +134,38 @@
       }
       @keyframes clouds {
         0% {
-          opacity: 0;
+          opacity: 0.1;
         }
         50% {
           opacity: 1;
         }
-        100%{
-          opacity: 0;
+        100% {
+          opacity: 0.2;
         }
       }
       .cloud {
         position: absolute;
         bottom: 0;
         right: 0;
+      }
+      .cloud-animation1 {
         animation: clouds 3s infinite;
+      }
+      .cloud-animation2 {
+        animation: clouds 2s infinite;
+      }
+      .cloud-animation3 {
+        animation: clouds 2.5s infinite;
+      }
+      .cloud-animation4 {
+        animation: clouds 4s infinite;
+      }
+      .cloud-animation5 {
+        animation: clouds 4.5s infinite;
+      }
+      .cloud-animation6 {
+        animation: clouds 3s infinite;
+        transform: scaleX(-1);
       }
       @media screen and (max-width: 1200px) {
         .swiper {
@@ -187,11 +206,12 @@
         </div>
         <div class="swiper-slide second-slide">
           <div>
-            <img src="./images/1.png" alt="Cloud" class="cloud" />
-            <img src="./images/2.png" alt="Cloud" class="cloud" />
-            <img src="./images/3.png" alt="Cloud" class="cloud" />
-            <img src="./images/4.png" alt="Cloud" class="cloud" />
-            <img src="./images/5.png" alt="Cloud" class="cloud" />
+            <img src="./images/1.png" alt="Cloud" class="cloud cloud-animation1" />
+            <img src="./images/2.png" alt="Cloud" class="cloud cloud-animation2" />
+            <img src="./images/3.png" alt="Cloud" class="cloud cloud-animation3" />
+            <img src="./images/4.png" alt="Cloud" class="cloud cloud-animation4" />
+            <img src="./images/5.png" alt="Cloud" class="cloud cloud-animation5" />
+            <img src="./images/5.png" alt="Cloud" class="cloud cloud-animation6" />
           </div>
         </div>
       </div>
