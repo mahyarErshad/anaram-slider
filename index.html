@@ -131,10 +131,22 @@
       .aa img {
         height: 200px;
       }
+      @keyframes clouds {
+        0% {
+          opacity: 0;
+        }
+        50% {
+          opacity: 1;
+        }
+        100%{
+          opacity: 0;
+        }
+      }
       .cloud {
         position: absolute;
         bottom: 0;
         right: 0;
+        animation: clouds 3s infinite;
       }
       @media screen and (max-width: 1200px) {
         .swiper {
@@ -174,12 +186,12 @@
           </div>
         </div>
         <div class="swiper-slide second-slide">
-          <div id="scene" data-relative-input="true" data-hover-only="hoverOnly">
-            <img src="./images/1.png" data-depth="1.5" alt="Cloud" class="cloud" />
-            <img src="./images/2.png" data-depth="1.5" alt="Cloud" class="cloud" />
-            <img src="./images/3.png" data-depth="1.5" alt="Cloud" class="cloud" />
-            <img src="./images/4.png" data-depth="1.5" alt="Cloud" class="cloud" />
-            <img src="./images/5.png" data-depth="1.5" alt="Cloud" class="cloud" />
+          <div>
+            <img src="./images/1.png" alt="Cloud" class="cloud" />
+            <img src="./images/2.png" alt="Cloud" class="cloud" />
+            <img src="./images/3.png" alt="Cloud" class="cloud" />
+            <img src="./images/4.png" alt="Cloud" class="cloud" />
+            <img src="./images/5.png" alt="Cloud" class="cloud" />
           </div>
         </div>
       </div>
@@ -247,8 +259,6 @@
           window.open(item.href, "_blank");
         });
       });
-      // const scene2 = document.getElementById("scene2");
-      // const parallaxInstance2 = new Parallax(scene2);
     </script>
   </body>
 </html>
