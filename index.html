@@ -143,6 +143,16 @@
           opacity: 0.2;
         }
       }
+      @keyframes middleCloud {
+        0% {
+          left: -1%;
+          transform: scale(1);
+        }
+        100% {
+          left: -150%;
+          transform: scale(2);
+        }
+      }
       .cloud {
         position: absolute;
         bottom: 0;
@@ -166,6 +176,26 @@
       .cloud-animation6 {
         animation: clouds 3s infinite;
         transform: scaleX(-1);
+      }
+      .middleCloud1 {
+        position: absolute;
+        bottom: 40%;
+        animation: middleCloud linear infinite 10s;
+      }
+      .middleCloud2 {
+        position: absolute;
+        bottom: 40%;
+        animation: middleCloud linear infinite 5s;
+      }
+      .middleCloud3 {
+        position: absolute;
+        bottom: 40%;
+        animation: middleCloud linear infinite 2.5s;
+      }
+      .middleCloud4 {
+        position: absolute;
+        bottom: 40%;
+        animation: middleCloud linear infinite 7.5s;
       }
       @media screen and (max-width: 1200px) {
         .swiper {
@@ -212,6 +242,10 @@
             <img src="./images/4.png" alt="Cloud" class="cloud cloud-animation4" />
             <img src="./images/5.png" alt="Cloud" class="cloud cloud-animation5" />
             <img src="./images/5.png" alt="Cloud" class="cloud cloud-animation6" />
+            <img src="./images/middleCloud.png" alt="Cloud" class="middleCloud1" />
+            <img src="./images/middleCloud.png" alt="Cloud" class="middleCloud2" />
+            <img src="./images/middleCloud.png" alt="Cloud" class="middleCloud3" />
+            <img src="./images/middleCloud.png" alt="Cloud" class="middleCloud4" />
           </div>
         </div>
       </div>
@@ -235,10 +269,10 @@
           el: ".swiper-pagination",
           clickable: true,
         },
-        autoplay: {
-          delay: 10000,
-          disableOnInteraction: false,
-        },
+        // autoplay: {
+        //   delay: 10000,
+        //   disableOnInteraction: false,
+        // },
       });
     </script>
     <script src="./parallex.js"></script>
